@@ -1,0 +1,12 @@
+version: '2.2'
+
+services:
+  jupyterhub:
+    build: .
+    image: joy-rosie/jupyterhub
+    #ports:
+    #    - "8000:8000"
+    #volumes:
+    #    - "c:/code/docker/jupyterhub/jupyterhub_data:/srv/jupyterhub"
+
+# docker run --rm -v c:/code/docker/jupyterhub/jupyterhub_data:/srv/jupyterhub -v c:/code/docker/jupyterhub/jupyterhub_home:/home/ -p 8000:8000 joy-rosie/jupyterhub:latest jupyterhub
